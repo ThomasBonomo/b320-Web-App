@@ -8,22 +8,22 @@ function callback(e)
 	{
 		if (fullJson.posts[i].sample.url != "null")
 		{
-			resultBody.innerHTML += "<div class=\"result\"><img class=\"result-image\" src=\"" + fullJson.posts[i].sample.url + "\"><div class=\"result-link\">" + fullJson.posts[i].sample.url + "</div></div>";
+			resultBody.innerHTML += "<div class=\"result\"><img class=\"result-image\" src=\"" + fullJson.posts[i].sample.url + "\"><span class=\"result-link\">" + fullJson.posts[i].sample.url + "</span></div>";
 		}
 		else if (fullJson.sources.length > 0)
 		{
 			if (fullJson.sources[0].startsWith("https://www.twitter"))
 			{
-				resultBody.innerHTML += "<div class=\"result\"><img class=\"result-image\" src=\"" + fullJson.posts[i].sources[0] + "." + fullJson.posts[i].file.ext + "\"><div class=\"result-link\">" + fullJson.posts[i].sources[0] + "." + fullJson.posts[i].file.ext + "</div></div>";
+				resultBody.innerHTML += "<div class=\"result\"><img class=\"result-image\" src=\"" + fullJson.posts[i].sources[0] + "." + fullJson.posts[i].file.ext + "\"><span class=\"result-link\">" + fullJson.posts[i].sources[0] + "." + fullJson.posts[i].file.ext + "</span></div>";
 			}
 			else
 			{
-				resultBody.innerHTML += "<div class=\"result\"><img class=\"result-image\" src=\"" + fullJson.posts[i].sources[0] + "\"><div class=\"result-link\">" + fullJson.posts[i].sources[0] + "</div></div>";
+				resultBody.innerHTML += "<div class=\"result\"><img class=\"result-image\" src=\"" + fullJson.posts[i].sources[0] + "\"><span class=\"result-link\">" + fullJson.posts[i].sources[0] + "</span></div>";
 			}
 		}
 		else
 		{
-			resultBody.innerHTML += "<div class=\"result\">Could not find image.</div>";
+			resultBody.innerHTML += "<span class=\"result\">Could not find image.</span>";
 		}
 	}
 }

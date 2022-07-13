@@ -92,7 +92,7 @@ header button:active {
 .result-image {
 	border: .15rem outset;
 	border-color: var(--foreground-color) var(--background-color) var(--background-color) var(--foreground-color);
-	max-width: 100%;
+	max-width: calc(100% - .3rem);
 	width: 100%;
 }
 
@@ -101,8 +101,7 @@ header button:active {
 	border-color: var(--foreground-color) var(--background-color) var(--background-color) var(--foreground-color);
 	display: block;
 	overflow: clip;
-	max-width: 100%;
+	max-width: calc(100% - .3rem);
 	width: 100%;
-	//font-size: .8rem;
-	font-size: 0;
+	font-size: .8rem;
 }
