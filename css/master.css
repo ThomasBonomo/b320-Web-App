@@ -1,0 +1,105 @@
+:root {
+	--background-color: #000;
+	--foreground-color: #FFF;
+	--accent-color:     #888;
+}
+
+::-webkit-input-placeholder {
+	color:var(--foreground-color);
+}
+::-webkit-scrollbar {
+	width:0;
+}
+
+* {
+	font:1rem 'Courier New', monospace;
+}
+
+body {
+	margin: 0;
+	background-color: var(--accent-color);
+}
+
+header {
+	display: grid;
+	grid-template-columns: 7rem auto 3rem;
+	height: 3rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+header a {
+	font-size: 1.9rem;
+	text-align: center;
+	padding: .25rem;
+	color: var(--foreground-color);
+	text-decoration: none;
+	background-color: var(--accent-color);
+	border: .15rem outset;
+	border-color: var(--foreground-color) var(--background-color) var(--background-color) var(--foreground-color);
+}
+
+header a:active {
+	border: .15rem inset;
+	border-color: var(--background-color) var(--foreground-color) var(--foreground-color) var(--background-color);
+}
+
+header input {
+	font-size: 1.2rem;
+	color: var(--foreground-color);
+	background-color: var(--accent-color);
+	border: .15rem outset;
+	border-color: var(--foreground-color) var(--background-color) var(--background-color) var(--foreground-color);
+	outline: none;
+	border-radius: 0;
+	margin: 0;
+	min-width: 0;
+}
+
+header input:focus {
+	border: .15rem inset;
+	border-color: var(--background-color) var(--foreground-color) var(--foreground-color) var(--background-color);
+}
+
+header button {
+	font-size: 1.9rem;
+	text-align: center;
+	color: var(--foreground-color);
+	background-color: var(--accent-color);
+	border: .15rem outset;
+	border-color: var(--foreground-color) var(--background-color) var(--background-color) var(--foreground-color);
+}
+
+header button:active {
+	border: .15rem inset;
+	border-color: var(--background-color) var(--foreground-color) var(--foreground-color) var(--background-color);
+}
+
+.result-body {
+	display: grid;
+	grid-row-gap: .8rem;
+	padding: .8rem;
+	margin-top: 3rem;
+}
+
+.result {
+	font-size: 0;
+}
+
+.result-image {
+	border: .15rem outset;
+	border-color: var(--foreground-color) var(--background-color) var(--background-color) var(--foreground-color);
+	max-width: 100%;
+	width: 100%;
+}
+
+.result-link {
+	border: .15rem outset;
+	border-color: var(--foreground-color) var(--background-color) var(--background-color) var(--foreground-color);
+	display: block;
+	overflow: word-wrap;
+	max-width: 100%;
+	width: 100%;
+	font-size: .8rem;
+}
