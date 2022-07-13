@@ -97,6 +97,8 @@ header button:active {
 }
 
 .result-link {
+	color: var(--foreground-color);
+	background-color: var(--accent-color);
 	border: .15rem outset;
 	border-color: var(--foreground-color) var(--background-color) var(--background-color) var(--foreground-color);
 	display: block;
@@ -104,5 +106,4 @@ header button:active {
 	max-width: calc(100vw - .3rem);
 	width: 100%;
 	font-size: .8rem;
-	word-wrap: auto;
 }
