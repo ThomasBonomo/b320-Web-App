@@ -1,7 +1,8 @@
 :root {
 	--background-color: #000;
 	--foreground-color: #FFF;
-	--accent-color:     #888;
+	/--accent-color:     #888;
+	--accent-color:     #005781;
 }
 
 ::-webkit-input-placeholder {
