@@ -1,7 +1,7 @@
 function callback(e)
 {
 	const fullJson = JSON.parse(e);
-	var resultBody = document.body.getElementsByClassname("result-body")[0];
+	var resultBody = document.body.getElementsByClassName("result-body")[0];
 	resultBody.innerHTML = "";
 	
 	for (let i = 0; i < fullJson.posts.length; i++)
