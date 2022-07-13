@@ -87,12 +87,13 @@ header button:active {
 
 .result {
 	font-size: 0;
+	max-width: calc(100vw - 1.6rem);
 }
 
 .result-image {
 	border: .15rem outset;
 	border-color: var(--foreground-color) var(--background-color) var(--background-color) var(--foreground-color);
-	max-width: calc(100vw - .3rem);
+	max-width: calc(100% - .3rem);
 	width: 100%;
 }
 
@@ -103,7 +104,8 @@ header button:active {
 	border-color: var(--foreground-color) var(--background-color) var(--background-color) var(--foreground-color);
 	display: block;
 	overflow: hidden;
-	max-width: calc(100vw - .3rem);
+	max-width: calc(100% - .3rem);
 	width: 100%;
 	font-size: .8rem;
+	margin: 0;
 }
